@@ -18,8 +18,9 @@ There are a few pre-requisites before you can begin your virtualized journey.
 
 First, you must install the necessary tools. They're easy to get and will only take a minute:
 
-VirtualBox
-Vagrant
+ - [VirtualBox](https://www.virtualbox.org/)
+ - [Vagrant](https://www.vagrantup.com/)
+
 Second … well, that's all you need, really.
 
 ##I downloaded the zip file (cloned this repo), now what?

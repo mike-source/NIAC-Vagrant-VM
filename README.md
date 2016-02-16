@@ -1,4 +1,12 @@
-Stolen from here: https://puphpet.com/upload-config#help
+The point of this repository is to keep a copy of our local Vagrant development VM that we can easily re-provision.
+
+For example, to add new apache vhosts or databases, one of us should be able to edit the config.yaml file for the VM, run `vagrant provision` locally and also push the config changes up to this repo. The same changes can then be pulled and `vagrant provision` rerun on each machine we develop from.
+
+Provided the file structure of our web projects folder on each machine is the same, this will mean config changes to our development VM are easily propagated to any machine we want and our dev environment stays more or less constant regardless where we work from.
+
+I'll document this better as we go along.
+
+Here's the setup instructions for Vagrant/Puphpet, stolen from here: https://puphpet.com/upload-config#help
 
 (So there is a reference of the puphpet instructions at the time this config was generated)
 
@@ -30,7 +38,7 @@ For example, if you want to have more OS-level packages installed (like vim, cur
 
 To create a new Apache or Nginx vhost, simply copy/paste the one you may have created and customize to your needs.
 
-#Attention: if you see some sections with non-sensical array keys (ex: rIreAN33ne2a) that means they have to be unique! If you copy/paste to add new settings, you must ensure you change this unique key to some other random string! Bad Things Will Happen if you don't.
+*Attention: if you see some sections with non-sensical array keys (ex: rIreAN33ne2a) that means they have to be unique! If you copy/paste to add new settings, you must ensure you change this unique key to some other random string! Bad Things Will Happen if you don't.*
 
 ##Learn you some Vagrant
 You may want to learn the basics of Vagrant CLI by going here. You really only need to learn the very basics - that is what I created this app for!
